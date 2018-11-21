@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ticker</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/heart.png">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- navbar -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="#"><img src="img/heart.png" alt=""></a>
+
+</div>
+<div class="collapse navbar-collapse navbar-left" id="">
+	<ul class="nav navbar-nav">
+		<li><a href="#">Ticker</a></li>
+	</ul>
+</div><!-- /.navbar-collapse -->
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio<span class="sr-only">(current)</span></a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notificaciones</a></li> 
+		<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Mensajes</a></li> 
+	</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+<!-- contenido -->
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<aside>
+				<div class="aside">
+					<h3>Pusheen Cat</h3>
+					<p>Holi! me llamo Pusheen,me encanta la pizza 🍕 y dormir 😋 <br>Vivo en Japón y soy muy kawaii.🈹 </p>
+					<a href="#" id="link">@pusheencat</a>
+
+					<div id="preview" class="thumbnail">
+						<a href="#" id="file-select" class="btn btn-default">Elegir archivo</a>
+						<img src="img/push.jpg"/>
+
+					</div>
+					
+
+					<form id="file-submit" enctype="multipart/form-data">
+						<input id="file" name="file" type="file"/>
+					</form>
+
+					<a href="#" class="btn btn-primary" id="file-save">Guardar</a> 
+				</div>
+			</aside>
+
+			<form id="form__chat">
+				<h3>¿Qué está pasando?</h3> 
+				<textarea name="chat__box" id="mytext" cols="50" rows="2"></textarea>
+				<input type="submit" name="" value="Tickear">
+			</form>
+		  
+		  <aside>
+          <div class="aside2">
+            <h3> Tendencias para ti</h3>
+            <nav>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">#Chile</a> </li>
+                <li><a href="#">#Santiago</a></li>
+                <li><a href="#">#UnDiaComohoy</a></li>
+                <li><a href="#">#Noticias</a></li>
+                <li><a href="#">#Imagenes</a></li>
+                <li><a href="#">#Television</a></li>   
+              </ul>
+            </nav> 
+          </div>
+        </aside>
+		</div>
+
+
+        <!-- Columna 2 -->	
+
+		<div class="col-md-4">
+			<section id="section__2">	
+				<div class="post">
+					<div class="foto">
+						<img src="img/push.jpg" alt="">
+					</div>
+						<p>Hola! Este es mi primer post.</p>
+						<a class="like like--red" href="#">
+						<span class="glyphicon glyphicon-heart"></span>
+						</a>
+						<span class="social__number">0</span>
+						<input type="submit" id="boton2" value="✔">
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
