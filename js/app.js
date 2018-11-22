@@ -23,7 +23,6 @@ $("#section__2").on('click', '#boton2', function(){
 });
 
 $('.like').on("click",function(event){
-		event.stopPropagation();
 		event.preventDefault();
 		$(this).toggleClass('like--red');
 });
@@ -58,13 +57,12 @@ $('input[type=file]').change(function() {
 
 
 
-$(".like").on("click",function(){
-	counter = $(".social__number").text();
+$("#section__2").on("click",'.like',function(){
+	counter = $(this).siblings('.social__number').text();
 	counter= parseInt(counter);
-	$(".social__number").text(counter + 1);
+	 $(this).siblings('.social__number').text(counter + 1);
 
 });
-
 
 
 
