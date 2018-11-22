@@ -1,5 +1,5 @@
 body{
-	background-color: #ff91bf42;
+	background-image: url('../img/pink.png');
 }	
 
 .container{
@@ -90,7 +90,12 @@ border-radius: 20px;
 
 .like {
   float: right;
-  color: #c4cdd4;
+  color:  #c4cdd4;
+  
+}
+
+.like--red{
+	 color: #c4cdd4;
 }
 
 a:focus, a:hover {
